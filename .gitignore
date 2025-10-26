@@ -1,0 +1,4 @@
+# Ignore CMake build artificts
+* cmake-build-debug/
+/.idea/
+CMakeLists.txt
