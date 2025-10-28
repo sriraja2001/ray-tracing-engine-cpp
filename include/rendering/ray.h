@@ -5,10 +5,10 @@
 #ifndef RAY_TRACER_RAY_H
 #define RAY_TRACER_RAY_H
 
-#include "vec3.h"
+#include "core/vec3.h"
 
 class ray {
-public:
+  public:
     ray() {}
 
     ray(const point3& origin, const vec3& direction) : orig(origin), dir(direction) {}
@@ -20,9 +20,9 @@ public:
         return orig + t*dir;
     }
 
-private:
-    point3 orig;
-    vec3 dir;
+  private:
+      point3 orig;
+      vec3 dir;
 };
 
 #endif //RAY_TRACER_RAY_H
